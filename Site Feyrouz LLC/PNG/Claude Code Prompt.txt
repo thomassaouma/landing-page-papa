@@ -1,0 +1,583 @@
+Claude Code Prompt
+
+Prompt 1
+I am using attached screenshots as visual references, not as a request for raw pixel export.
+Please rebuild the site cleanly with reusable structure and elegant responsive CSS.
+
+Build a small, production-ready multilingual website for a premium real estate advisory firm named FEYROUZ LLC.
+
+I am attaching:
+1. The logo file (transparent PNG)
+2. A screenshot of the Homepage design
+3. A screenshot of the “Our Approach” page design
+4. A screenshot of the “Global Footprint” page design
+
+Your job is to recreate this website as closely as possible in spirit and layout, while keeping the code clean, semantic, maintainable, and responsive.
+
+Do NOT generate a pixel-perfect export with absolute positioning everywhere.
+Instead, interpret the design properly and rebuild it with solid HTML/CSS structure using sections, containers, grid, and flexbox.
+
+==================================================
+PROJECT GOAL
+==================================================
+
+This website is a premium institutional showcase site for an independent real estate advisory firm.
+It is not a lead generation website.
+It must feel:
+- sober
+- premium
+- discreet
+- institutional
+- elegant
+- minimalist
+
+No flashy effects.
+No startup aesthetics.
+No commercial CTA buttons.
+
+==================================================
+SITE STRUCTURE
+==================================================
+
+Create a static website with the following pages:
+
+English:
+- index.html → Homepage
+- approach.html → “Our Approach”
+- footprint.html → “Global Footprint”
+
+French:
+- fr/index.html → Homepage FR
+- fr/approach.html → “Notre approche”
+- fr/footprint.html → “Présence internationale”
+
+Shared files:
+- assets/logo.png
+- styles.css
+- script.js (only if truly needed, otherwise avoid JS)
+
+==================================================
+HEADER / NAVIGATION
+==================================================
+
+All pages must share the same header.
+
+Header requirements:
+- Left side:
+  - the logo icon
+  - the text “FEYROUZ LLC”
+  - both together act as a link to the homepage
+    - English pages: link to /index.html
+    - French pages: link to /fr/index.html
+
+- Center or right area:
+  - link: “Approach” → /approach.html (or /fr/approach.html in French)
+  - link: “Footprint” → /footprint.html (or /fr/footprint.html in French)
+
+- Far right:
+  - language switch
+  - on English pages show: EN / FR
+  - on French pages show: FR / EN
+  - language switch must link to the equivalent page in the other language
+
+Examples:
+- index.html ↔ fr/index.html
+- approach.html ↔ fr/approach.html
+- footprint.html ↔ fr/footprint.html
+
+Navigation style:
+- very minimal
+- refined
+- no heavy hover effects
+- subtle hover state only
+- sticky header optional, only if it remains elegant
+
+==================================================
+FOOTER
+==================================================
+
+All pages must share the same footer.
+
+Footer content:
+- left side:
+  © 2024 FEYROUZ LLC. INSTITUTIONAL ADVISORY.
+- right side:
+  FOR ENQUIRIES ONLY: FEYROUZ@CONTACT.COM
+
+French footer:
+- left side:
+  © 2024 FEYROUZ LLC. CONSEIL IMMOBILIER INDÉPENDANT.
+- right side:
+  POUR DEMANDES PROFESSIONNELLES UNIQUEMENT : FEYROUZ@CONTACT.COM
+
+Footer style:
+- very light
+- understated
+- small caps or refined uppercase feel
+- wide spacing
+- minimal visual weight
+
+==================================================
+DESIGN SYSTEM
+==================================================
+
+Use the attached designs and logo as the primary visual reference.
+
+Visual direction:
+- premium institutional advisory firm
+- quiet luxury
+- Azure Heritage style
+- clean editorial feeling
+- strong typography
+- generous whitespace
+
+Color palette:
+- deep desaturated navy / steel blue from the logo
+- off-white / very light grey backgrounds
+- slightly darker cool grey section backgrounds
+- minimal accent usage
+
+Suggested palette:
+- primary text / headings: muted navy blue
+- body text: soft dark grey
+- backgrounds: #f5f5f3 / #f1f3f4 / subtle cool greys
+Adjust based on the logo.
+
+Typography:
+- elegant serif for major headings
+- refined sans-serif for body and navigation
+- if using web-safe or Google Fonts, choose combinations similar to:
+  - Serif: Cormorant Garamond, EB Garamond, or Libre Baskerville
+  - Sans-serif: Inter, Manrope, or Source Sans 3
+- typography must feel premium, not trendy
+
+Layout:
+- use large white space
+- use restrained section widths
+- clean container system
+- preserve hierarchy and pacing from the screenshots
+
+==================================================
+RESPONSIVENESS
+==================================================
+
+The site must be fully responsive.
+
+Requirements:
+- desktop-first aesthetic, but fully functional on mobile
+- preserve elegant spacing on large screens
+- collapse columns sensibly on tablet/mobile
+- no overflow issues
+- no broken typography
+- no horizontal scrolling
+
+==================================================
+ANIMATION / INTERACTIVITY
+==================================================
+
+Keep interactions minimal.
+
+Do not include:
+- carousels
+- parallax
+- flashy transitions
+- heavy animation
+- video backgrounds
+
+For the Global Footprint page:
+- if useful, allow a subtle pulse effect on Dubai and Caribbean points on the map
+- but only if it remains very restrained and premium
+- if in doubt, keep it static
+
+==================================================
+CONTENT
+==================================================
+
+Use the following content.
+
+-------------------------
+ENGLISH — HOMEPAGE
+-------------------------
+
+Hero title:
+Strategic Real Estate Advisory
+
+Hero subtitle:
+Dubai & International Markets
+
+Hero supporting text:
+Providing discerning clients with independent perspective, rigorous analysis, and sophisticated execution in global real estate investments.
+
+Section title:
+Independence as Strategy
+
+Section body:
+Feyrouz LLC operates exclusively as a strategic advisor. We provide objective, conflict-free counsel to private and institutional capital navigating complex property markets.
+
+By structurally separating advisory from transactional execution, we eliminate the biases inherent in traditional real estate models. We do not engage in brokerage activity. Our sole imperative is the long-term preservation and growth of our clients’ wealth through disciplined real asset allocation.
+
+Section title:
+Advisory Capabilities
+
+Section subtitle:
+Sophisticated solutions for complex capital deployment.
+
+Cards:
+1. Investment Advisory
+Strategic capital allocation, asset class selection, and macroeconomic trend analysis to optimize risk-adjusted returns in prime markets.
+
+2. Portfolio Analysis
+Rigorous underwriting, performance benchmarking, and restructuring strategies for existing real estate portfolios to maximize yield and mitigate exposure.
+
+3. Market Access & Coordination
+Facilitating entry into high-barrier jurisdictions through a curated network of best-in-class legal, tax, and local execution partners.
+
+Section title:
+Methodology
+
+Section subtitle:
+The principles guiding our advisory practice.
+
+Methodology items:
+1. Independent Perspective
+Unyielding objectivity. Our remuneration is divorced from transaction volume, ensuring our guidance aligns perfectly with client interests.
+
+2. Tailored Strategy
+Bespoke solutions recognizing that institutional capital requires nuanced, highly specialized deployment strategies rather than templated products.
+
+3. Long-Term Vision
+Looking beyond market cycles. We architect portfolios designed to weather volatility and preserve intergenerational wealth.
+
+Section title:
+Global Footprint
+
+Location cards:
+1. Dubai
+A sophisticated gateway market and one of our core areas of expertise in super-prime real estate advisory.
+
+2. International Markets
+Selective international coverage with a particular focus on cross-border advisory and the Caribbean.
+
+Disclaimer text:
+“We operate strictly as independent advisors. We do not act as real estate agents or brokers, nor do we handle client funds.”
+
+-------------------------
+ENGLISH — APPROACH PAGE
+-------------------------
+
+Hero title:
+Our Approach
+
+Hero subtitle:
+Independent real estate advisory driven by strategy, analysis, and long-term value.
+
+Section title:
+Beyond the Transaction.
+
+Section body:
+Real estate decisions are complex, multi-generational, and fundamental to long-term wealth preservation. Our advisory model separates strategic counsel from transaction execution, ensuring our interests are entirely aligned with yours.
+
+We do not sell properties. We provide the analytical rigor, market intelligence, and structural framework necessary to navigate high-stakes real estate portfolios with confidence and absolute clarity.
+
+Section label:
+Core Principles
+
+Core principle cards:
+1. Independent by Design
+Free from brokerage incentives, our counsel is objective, unvarnished, and focused solely on your portfolio’s optimal outcome.
+
+2. Strategic & Analytical
+Decisions rooted in rigorous quantitative analysis and qualitative market foresight, mitigating risk and identifying true value.
+
+3. Tailored to Each Client
+Bespoke frameworks ensure advice reflects specific mandates, whether preservation, yield generation, or generational transfer.
+
+4. Long-Term Focus
+We look past market cycles, advising on asset endurance, liquidity management, and sustainable capital deployment.
+
+Section label:
+The Paradigm Shift
+
+Comparison columns:
+
+Left column title:
+Advisory Counsel
+Bullets:
+- Fee-based, independent structure.
+- Strategic focus on portfolio architecture.
+- Objective evaluation of hold vs. sell scenarios.
+- Long-term relationship alignment.
+
+Right column title:
+Traditional Brokerage
+Bullets:
+- Commission-based, transaction-driven.
+- Focus on closing the deal.
+- Incentivized toward constant turnover.
+- Short-term transactional alignment.
+
+Closing statement:
+Clarity in complexity. Confidence in action.
+
+-------------------------
+ENGLISH — GLOBAL FOOTPRINT PAGE
+-------------------------
+
+Hero title:
+Global Footprint
+
+Hero subtitle:
+A focused presence across key international real estate markets
+
+Intro paragraph:
+Our geographic reach is defined not by scale, but by depth of expertise. We maintain a highly selective presence in markets where our deep local knowledge, strategic insight, and established networks provide an absolute advantage in navigating complex real estate environments for our clients.
+
+World map section:
+- display a refined world map / globe-inspired visual
+- highlight:
+  - Caribbean
+  - Dubai
+
+Two columns below the map:
+
+Left title:
+Dubai
+
+Left body:
+As a dynamic and rapidly maturing hub of international wealth, Dubai demands a sophisticated, hyper-local approach. Our core expertise in this market is built upon years of rigorous analysis, institutional relationships, and an unparalleled understanding of the structural forces shaping premium real estate assets in the region. We deliver authoritative counsel rooted in factual rigor rather than speculative trends.
+
+Right title:
+International Markets
+
+Right body:
+Beyond our primary hub, our footprint extends to targeted jurisdictions, notably the Caribbean, where bespoke real estate investments intersect with complex advisory needs. Our approach here is measured and highly tailored. We reject broad global coverage in favor of strategic selection—operating exclusively in markets where we possess the depth of insight necessary to execute sophisticated strategies with absolute precision.
+
+Section label:
+Approach to Geography
+
+Quote:
+“Depth over breadth. We prioritize profound relevance and established expertise in pivotal markets over the superficiality of global scale.”
+
+Closing statement:
+Focused expertise in key markets where insight matters most.
+
+-------------------------
+FRENCH — HOMEPAGE
+-------------------------
+
+Hero title:
+Conseil stratégique en investissement immobilier
+
+Hero subtitle:
+Dubaï & marchés internationaux
+
+Hero supporting text:
+Une expertise indépendante au service de décisions immobilières exigeantes, fondées sur l’analyse, la rigueur et une vision patrimoniale de long terme.
+
+Section title:
+L’indépendance comme stratégie
+
+Section body:
+Feyrouz LLC intervient exclusivement comme conseil stratégique indépendant. Nous accompagnons des clients privés et institutionnels en apportant une lecture objective, sans conflit d’intérêt, sur des marchés immobiliers complexes.
+
+En dissociant structurellement le conseil de l’exécution transactionnelle, nous éliminons les biais inhérents aux modèles immobiliers traditionnels. Nous n’exerçons aucune activité de courtage. Notre seul objectif est la préservation et la croissance à long terme du patrimoine de nos clients à travers une allocation disciplinée des actifs immobiliers.
+
+Section title:
+Capacités de conseil
+
+Section subtitle:
+Des solutions sophistiquées pour des décisions d’allocation complexes.
+
+Cards:
+1. Conseil en investissement
+Allocation stratégique du capital, sélection des classes d’actifs et analyse macroéconomique pour optimiser le rendement ajusté au risque sur des marchés prime.
+
+2. Analyse de portefeuille
+Souscription rigoureuse, évaluation de performance et stratégies de restructuration pour optimiser le rendement et maîtriser l’exposition.
+
+3. Accès marché & coordination
+Accompagnement sur des juridictions exigeantes via un réseau sélectionné de partenaires juridiques, fiscaux et opérationnels de premier plan.
+
+Section title:
+Méthodologie
+
+Section subtitle:
+Les principes qui structurent notre pratique du conseil.
+
+Methodology items:
+1. Perspective indépendante
+Une objectivité totale. Notre rémunération n’est jamais liée au volume de transaction, garantissant un alignement complet avec les intérêts du client.
+
+2. Stratégie sur mesure
+Des approches construites pour répondre à des objectifs précis, là où les capitaux sophistiqués exigent finesse, discernement et personnalisation.
+
+3. Vision long terme
+Une lecture qui dépasse les cycles de marché pour concevoir des allocations capables de résister à la volatilité et de préserver la valeur dans la durée.
+
+Section title:
+Présence internationale
+
+Location cards:
+1. Dubaï
+Un marché passerelle sophistiqué et l’un de nos principaux pôles d’expertise en conseil immobilier haut de gamme.
+
+2. Marchés internationaux
+Une couverture sélective de marchés internationaux, avec un intérêt particulier pour le conseil cross-border et les Caraïbes.
+
+Disclaimer text:
+“Nous intervenons strictement comme conseil indépendant. Nous n’agissons ni comme agents immobiliers, ni comme courtiers, et nous ne détenons jamais les fonds de nos clients.”
+
+-------------------------
+FRENCH — APPROACH PAGE
+-------------------------
+
+Hero title:
+Notre approche
+
+Hero subtitle:
+Un conseil immobilier indépendant guidé par la stratégie, l’analyse et la création de valeur à long terme.
+
+Section title:
+Au-delà de la transaction.
+
+Section body:
+Les décisions immobilières sont complexes, structurantes et souvent intergénérationnelles. Notre modèle dissocie le conseil stratégique de l’exécution transactionnelle afin de garantir un alignement total de nos intérêts avec ceux de nos clients.
+
+Nous ne vendons pas de biens. Nous apportons la rigueur analytique, l’intelligence de marché et le cadre structurant nécessaires pour prendre des décisions patrimoniales exigeantes avec clarté et confiance.
+
+Section label:
+Principes fondamentaux
+
+Core principle cards:
+1. Indépendance par construction
+Affranchi des logiques de courtage, notre conseil est objectif, exigeant et orienté exclusivement vers l’intérêt patrimonial du client.
+
+2. Stratégique & analytique
+Des décisions fondées sur une analyse rigoureuse, quantitative et qualitative, afin de mieux arbitrer les risques et identifier la valeur réelle.
+
+3. Adapté à chaque client
+Des cadres d’analyse conçus sur mesure selon les objectifs : préservation, rendement, diversification ou transmission.
+
+4. Focalisation long terme
+Nous raisonnons au-delà des cycles pour accompagner des allocations durables, une gestion de la liquidité maîtrisée et des décisions cohérentes dans le temps.
+
+Section label:
+Le changement de paradigme
+
+Comparison columns:
+
+Left column title:
+Conseil indépendant
+Bullets:
+- Structure indépendante fondée sur des honoraires.
+- Priorité donnée à l’architecture patrimoniale.
+- Évaluation objective des scénarios de conservation ou de cession.
+- Alignement relationnel dans la durée.
+
+Right column title:
+Courtage traditionnel
+Bullets:
+- Modèle fondé sur la commission et la transaction.
+- Priorité donnée à la conclusion de l’opération.
+- Incitation à la rotation des actifs.
+- Alignement principalement transactionnel et court terme.
+
+Closing statement:
+De la clarté dans la complexité. De la confiance dans l’action.
+
+-------------------------
+FRENCH — GLOBAL FOOTPRINT PAGE
+-------------------------
+
+Hero title:
+Présence internationale
+
+Hero subtitle:
+Une présence ciblée sur des marchés immobiliers internationaux clés
+
+Intro paragraph:
+Notre présence géographique ne se définit pas par son étendue, mais par la profondeur de notre expertise. Nous intervenons de manière sélective sur des marchés où notre connaissance locale, notre lecture stratégique et nos réseaux établis créent un avantage réel pour accompagner des situations immobilières complexes.
+
+World map section:
+- display the same map / globe-inspired visual
+- highlight:
+  - Caraïbes
+  - Dubaï
+
+Two columns below the map:
+
+Left title:
+Dubaï
+
+Left body:
+Marché dynamique et pôle croissant de richesse internationale, Dubaï exige une approche sophistiquée et profondément ancrée dans le réel local. Notre expertise sur ce marché repose sur des années d’analyse rigoureuse, des relations institutionnelles solides et une compréhension fine des forces structurelles qui façonnent l’immobilier premium de la région. Nous délivrons un conseil d’autorité fondé sur les faits et non sur des logiques spéculatives.
+
+Right title:
+Marchés internationaux
+
+Right body:
+Au-delà de notre marché principal, notre empreinte s’étend à certaines juridictions ciblées, notamment dans les Caraïbes, où les investissements immobiliers sur mesure rencontrent des enjeux de conseil complexes. Notre approche y est sélective et exigeante. Nous refusons la couverture globale de façade au profit d’une présence choisie, limitée aux marchés où notre profondeur d’analyse permet de conseiller avec précision.
+
+Section label:
+Approche géographique
+
+Quote:
+“Nous privilégions la profondeur à l’étendue : une expertise réelle sur des marchés clés plutôt qu’une présence superficielle à l’échelle mondiale.”
+
+Closing statement:
+Une expertise ciblée sur les marchés où l’insight fait réellement la différence.
+
+==================================================
+IMPLEMENTATION REQUIREMENTS
+==================================================
+
+1. Use clean semantic HTML5.
+2. Use one shared CSS file.
+3. Use CSS variables for colors, spacing, typography.
+4. Keep the code elegant and maintainable.
+5. Do not use any framework.
+6. Do not use Tailwind.
+7. Do not use Bootstrap.
+8. Avoid unnecessary JavaScript.
+9. Use grid/flexbox, not absolute positioning for layout.
+10. Optimize for readability and long-term maintainability.
+11. Make the layout feel close to the attached Figma screenshots.
+12. Reuse common layout patterns across pages.
+13. Add subtle hover styles for nav links only.
+14. Ensure links between all pages work properly.
+15. Add proper meta titles and meta descriptions for each page.
+16. Add lang attributes per page.
+17. Add basic SEO-friendly structure and headings.
+18. Ensure accessibility basics:
+   - proper contrast
+   - alt text on logo/images
+   - semantic headings
+   - focus states on links
+19. If map imagery is needed, create a stylized CSS/SVG-based world map section or use a simple elegant placeholder section rather than relying on external image URLs.
+20. If card imagery is needed on the homepage footprint section, create elegant visual placeholders or gradient/image blocks that match the screenshots without depending on remote assets.
+
+==================================================
+OUTPUT FORMAT
+==================================================
+
+Please output:
+1. The full folder structure
+2. Then the complete code for each file:
+- index.html
+- approach.html
+- footprint.html
+- fr/index.html
+- fr/approach.html
+- fr/footprint.html
+- styles.css
+- script.js (only if required)
+
+Make sure all links are correct and the site is immediately runnable as a static website.
+
+Now generate the full codebase in files directly in the current folder.
+
+Prompt 2
+Refine spacing, typography, and section proportions to match the attached designs more closely while keeping the code clean and responsive.
+
+Prompt 3
+Make sure the mobile rendering remains elegant and that the navigation and language switch work correctly across all six pages.
